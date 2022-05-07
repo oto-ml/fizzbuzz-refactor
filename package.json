@@ -99,7 +99,7 @@
     "jest-leak-detector": "^28.0.2",
     "jest-haste-map": "^28.0.2",
     "jest-docblock": "^28.0.2",
-    "jest-environment-node": "^28.0.2",
+    "jest-environment-node": "^27.0.6",
     "jest-message-util": "^28.0.2",
     "jest-matcher-utils": "^28.0.2",
     "jest-get-type": "^28.0.2",
