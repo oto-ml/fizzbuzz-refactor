@@ -1,5 +1,5 @@
-const JSONReader = require("../../lib/utils/JSONReader");
-const ExplorerService = require("../../lib/services/ExplorerService");
+const JSONReader = require("./../../../lib/utils/Reader");
+const ExplorerService = require("./../../../lib/services/ExplorerService");
 
 describe("Prueba de unidad de para ExplorerService", () => {
     test("1) Leer la lista completa de Explorers", () => {
@@ -11,7 +11,7 @@ describe("Prueba de unidad de para ExplorerService", () => {
         expect(ExplorerService.getAmountOfExplorersByMission(explorers,"node")).toBe(0);
     });
     test("3) Obtener explorers que sean parte de Node", () => {
-        const explorers = JSONReader.readJsonFile("./data/explorers.json");
+        const explorers = JSONReader.readJsonFile("explorers.json");
         expect(ExplorerService.getExplorersUsernamesByMission(explorers,"node")).toContain("ajolonauta14");
     });
 });
