@@ -12,6 +12,6 @@ describe("Prueba de unidad de para ExplorerService", () => {
     });
     test("3) Obtener explorers que sean parte de Node", () => {
         const explorers = JSONReader.readJsonFile("explorers.json");
-        expect(ExplorerService.getExplorersUsernamesByMission(explorers,"node")).toContain("ajolonauta14");
+        expect(ExplorerService.getExplorersUsernamesByMission(explorers,"node")).toContain("ajolonauta1");
     });
 });
